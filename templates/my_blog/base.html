@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>又输了的博客</title>
+    <link rel='stylesheet' id='bootstrap-css'
+          href='https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css' type='text/css'
+          media='all'/>
+    <link rel='stylesheet' id='style-css' href='{% static "css/style.css" %}' type='text/css' media='all'/>
+    <link rel="stylesheet" id="code-css" href="{% static "css/code.css" %}" type="text/css" media="all">
+</head>
+<body>
+<!-- 头部 -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-head">
+    <div class="container">
+        <a class="navbar-brand nav-head-a" href="/">
+            主站
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                {% for category in all_category %}
+                    <li class="nav-item active">
+                        <a class="nav-link"
+                           href="{% url 'index' %}list-{{ category.id }}.html">{{ category.name }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</nav>
+
+{% block content %}
+{% endblock %}
+
+<!-- 底部 -->
+<footer class="footer">
+</footer>
+
+<!--JS文件-->
+<script type='text/javascript' src='https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+<script type='text/javascript'
+        src='https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js'></script>
+</body>
+</html>

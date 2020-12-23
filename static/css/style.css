@@ -1,0 +1,377 @@
+/* 文章 */
+html {
+    width: 100%;
+    height: 100%;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+body {
+    background: #f0ebf0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
+    color: #333;
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #007fff;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin: 0;
+}
+
+img {
+    vertical-align: top;
+    border: 0;
+}
+
+pre {
+    background-color: black;
+}
+
+/* 导航栏 */
+.nav-head-a {
+    font-size: 16px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 30px;
+    margin: 10px 0 10px 10px;
+    min-width: 100px;
+    text-align: center;
+}
+
+.nav-item {
+    font-size: 16px;
+    margin: 10px 0 10px 10px;
+    min-width: 100px;
+}
+
+.nav-item a {
+    text-align: center;
+}
+
+/* 左侧 */
+.bd-example {
+    margin: 20px 0;
+}
+
+.div-left {
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 25px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.div-left-title {
+    height: 40px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+
+.div-left-title-h4 {
+    font-size: 16px;
+    color: #393939;
+    border-left: 4px solid #007fff;
+    margin-bottom: 15px;
+    padding: 5px 0 5px 18px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.div-left-article {
+    margin: 0 0 20px 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #EEE;
+}
+
+.div-left-article-col {
+    padding-top: 15px;
+}
+
+.div-left-img {
+    width: 100%;
+    min-height: 120px;
+}
+
+.div-left-img:hover {
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+    opacity: 0.7;
+}
+
+
+.div-left-article h2 {
+    font-size: 20px;
+    font-weight: normal;
+    max-height: 64px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.div-left-article h2 a {
+    color: #353535;
+    font-weight: bold;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.div-left-article h2 a:hover {
+    color: #007fff;
+    padding-left: 5px;
+    transition: all 0.5s ease 0s;
+}
+
+.div-left-article p a {
+    margin-left: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    height: 60px;
+    overflow: hidden;
+    color: #999;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.div-left-article .meta {
+    margin-left: 10px;
+    font-size: 12px;
+    color: #999;
+    margin-top: 15px;
+}
+
+.div-left-article .meta .label {
+    margin-right: 20px;
+    padding-top: 5px;
+}
+
+.article-box .meta .label a {
+    color: #999;
+    font-weight: normal;
+}
+
+.breadcrumb {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0;
+}
+
+/* 右侧 */
+
+.div-right-item {
+    padding: 20px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.index-search {
+    position: relative;
+    display: block;
+    width: 205px;
+}
+
+.index-search input {
+    background-color: rgba(241, 241, 241, 0.2);
+    filter: alpha(opacity=40);
+    border: 1px solid rgba(204, 204, 204, 0.5);
+    line-height: 20px;
+    padding: 2px 10px 2px 10px;
+    vertical-align: top;
+    border-radius: 2px;
+    width: 160px;
+}
+
+.index-search input:focus {
+    outline: none;
+}
+
+.index-search button {
+    background: url("../picture/Search.png");
+    width: 26px;
+    height: 26px;
+    border: none;
+}
+
+.index-search button:focus {
+    outline: none;
+}
+
+.post-right-title {
+    font-size: 16px;
+    color: #393939;
+    border-left: 4px solid #007fff;
+    margin-left: -20px;
+    margin-bottom: 15px;
+    padding: 5px 0 5px 18px;
+    text-align: left;
+}
+
+.hot-list {
+    color: #007fff;
+    font-size: 16px;
+}
+
+.hot-list li {
+    margin: 0 0 0 -20px;;
+}
+
+.hot-list li a {
+    display: block;
+    padding: 6px 20px 6px 10px;
+    position: relative;
+    font-size: 12px;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #747f8c;
+    line-height: 22px;
+}
+
+.hot-list li:hover {
+    background-color: #F9F9F9;
+}
+
+.tags {
+    margin-left: -8px;
+    margin-top: -8px;
+}
+
+.tags a {
+    margin-left: 8px;
+    margin-top: 8px;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    vertical-align: top;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 12px;
+    background-color: #F3F3F3;
+    color: #999;
+    border-radius: 2px;
+    font-size: 12px;
+}
+
+.tags a:hover {
+    background-color: #007fff;
+    color: #FFF;
+}
+
+.wid-about {
+    text-align: center;
+    line-height: 3;
+}
+
+/* 文章 */
+.post-main {
+    background-color: rgb(255, 255, 255);
+    padding: 20px 30px 30px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+}
+
+.post-title {
+    font-size: 28px;
+    color: #393939;
+    line-height: 32px;
+    border-left: 4px solid #007fff;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    margin-left: -30px;
+    padding-left: 25px;
+}
+
+.article-meta {
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.article-meta .item {
+    margin-right: 10px;
+}
+
+.article-content {
+    font: 16px/30px "Microsoft Yahei";
+    line-height: 2em;
+    word-break: break-all;
+    word-wrap: break-word;
+    margin: 30px 0 20px 0;
+    color: #2a2a2a;
+}
+
+.article-content p {
+    margin-bottom: 20px;
+}
+
+.article-content a {
+    color: #007bff;
+}
+
+.article-content a:hover {
+    color: red;
+}
+
+.post-tag {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.post-tag span {
+    margin-right: 0;
+}
+
+.post-tag a {
+    color: #999;
+    margin: 0 6px 12px 6px;
+    background-clip: border-box;
+    background-color: #f3f3f3;
+    border-radius: 2px;
+    box-shadow: none;
+    line-height: 18px;
+    padding: 5px 12px;
+    display: inline-block;
+}
+
+.post-tag a:hover {
+    color: #fff;
+    background-color: #007fff;
+}
+
+/* 其它 */
+table {
+    margin-bottom: 20px;
+}
+
+table thead tr th {
+    min-width: 60px;
+    padding: 10px 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background: #D3D6D9;
+}
+
+table tbody tr td {
+    padding: 10px 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background: #F8FAFC;
+}
