@@ -82,9 +82,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'pyblog',
-        'USER': 'root',
-        'PASSWORD': 'Qsz123456',
-        'HOST': '47.110.154.75',
+        'USER': 'qszloser',
+        'PASSWORD': '123456',
+        'HOST': '127.0.0.1',
         'PORT': '3306',
     }
 }
